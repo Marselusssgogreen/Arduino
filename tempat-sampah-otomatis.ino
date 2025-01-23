@@ -55,8 +55,8 @@ void loop() {
   Serial.print(distance);
   Serial.println(" cm");
 
-  // Membuka tempat sampah dengan jarak yang ditentukan, Wilson rekomendasikan 10 cm
-  if (distance <= 10) {
+  // Membuka tempat sampah dengan jarak yang ditentukan, Wilson rekomendasikan 20 cm
+  if (distance <= 20) {
     digitalWrite(ledPin, HIGH); // Ini untuk menghidupin lampu led nya ya
     servo.write(90);           // Posisi membuka dari motor servo nya, jangan diubah dan pastikan 90 derajat, jika ketahuan Wilson bisa ditindak itu
     delay(3000);               // Membuka tempat sampah selama 3 detik, yang ini Wilson izinkan untuk dikustomisasi
